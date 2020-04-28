@@ -11,6 +11,13 @@
 
   <body>
     <div id="container"></div>
-    <script type="text/babel"></script>
+    <script type="text/babel">
+      class HelloWorld extends React.Component {
+        render() {
+          return <p>Hello, componentized world!</p>;
+        }
+      }
+      ReactDOM.render(<HelloWorld />, document.querySelector("#container"));
+    </script>
   </body>
 </html>
