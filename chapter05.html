@@ -21,7 +21,11 @@
     <script type="text/babel">
       class Square extends React.Component {
         render() {
-          return <br />;
+          var squareStyle = {
+            height: 150,
+            backgroundColor: "#FF6663",
+          };
+          return <div style={squareStyle}></div>;
         }
       }
       class Label extends React.Component {
@@ -35,15 +39,19 @@
             height: 200,
             width: 150,
             padding: 0,
-            backgroundColor: "#fff",
+            backgroundColor: "#FFF",
             boxShadow: "0px 0px 5px #666",
           };
-          return <div style={cardStyle}></div>;
+          return (
+            <div style={cardStyle}>
+              <Square />
+            </div>
+          );
         }
       }
       ReactDOM.render(
         <div>
-          <card />
+          <Card />
         </div>,
         document.querySelector("#container")
       );
