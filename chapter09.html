@@ -28,13 +28,10 @@
           return <div style={circleStyle}></div>;
         }
       }
+      var destination = document.querySelector("#container");
+      var theCircle = <Circle bgColor="#F9C240" />;
 
-      ReactDOM.render(
-        <div>
-          <Circle bgColor="#F9C240" />
-        </div>,
-        document.querySelector("#container")
-      );
+      ReactDOM.render(<div>{theCircle}</div>, destination);
     </script>
   </body>
 </html>
