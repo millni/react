@@ -79,7 +79,7 @@
           return (
             <div style={backgroundStyle}>
               <Counter display={this.state.count} />
-              <PlusbButton onClick={this.increase} />
+              <PlusbButton clickHandler={this.increase} />
             </div>
           );
         }
@@ -87,7 +87,7 @@
 
       class PlusbButton extends React.Component {
         render() {
-          return <button>+</button>;
+          return <button onClick={this.props.clickHandler}>+</button>;
         }
       }
 
