@@ -9,6 +9,13 @@
     <script src="http://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 
     <style>
+      #colorHeading {
+        padding: 0;
+        margin: 50px;
+        margin-bottom: -20px;
+        font-family: sans-serif;
+      }
+
       #container {
         padding: 50px;
         background-color: #fff;
@@ -45,6 +52,8 @@
   </head>
 
   <body>
+    <h1 id="colorHeading">Colorizer</h1>
+
     <div id="container"></div>
     <script type="text/babel">
       class Colorizer extends React.Component {
